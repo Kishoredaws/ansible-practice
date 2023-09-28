@@ -1,0 +1,15 @@
+- name: printing of variables at play-book level
+  hosts: mongodb
+  become: yes
+  vars:
+    COURSE: Devops
+    TRAINER: Shivakumar
+    DURATION: 4 months
+  tasks: 
+  - name: printing of hello world
+    ansible.builtin.debug:
+      msg: "Hello, I am learning Ansible"
+  - name: printing of variables
+    ansible.builtin.ping:
+      msg: "I am learning the course {{COURSE}}, the trainer is {{TRAINER}} and the duration is {{DURATION}}"
+      
