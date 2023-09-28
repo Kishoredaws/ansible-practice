@@ -10,6 +10,5 @@
     ansible.builtin.debug:
       msg: "Hello, I am learning Ansible"
   - name: printing of variables
-    ansible.builtin.ping:
+    ansible.builtin.debug:
       msg: "I am learning the course {{COURSE}}, the trainer is {{TRAINER}} and the duration is {{DURATION}}"
-      
