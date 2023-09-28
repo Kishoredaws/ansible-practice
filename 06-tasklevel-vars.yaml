@@ -15,4 +15,4 @@
       land: 200acres
       gold: 10kgs
     ansible.builtin.debug:
-      msg: "The land is {{land}}, the houses are {{houses}} and the money is {{money}}"
+      msg: "The land is {{land}}, the houses are {{houses}}, the gold is {{gold}} and the money is {{money}}"
