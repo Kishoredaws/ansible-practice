@@ -1,0 +1,36 @@
+- name: printing of variable data types
+  hosts: localhost
+  become; yes
+  vars:
+  - Name: "Kishore"  # string 
+  - Age: 39 #number
+  - Isdevops: true #boolean
+  - Skills: #list
+    - Devops
+    - AWS
+    - Kubernets
+  - Experience: #map
+    - Devops: 6
+    - AWS: 5
+    - Kubernetes: 4
+   tasks:
+   - name: printing of string variable
+     ansible.builtin.debug:
+        msg: "the string variable is {{Name}}"
+   - name: printing of number variable
+     ansible.builtin.debug:
+        msg: "the number variable is {{Age}}"
+   - name: printing of boolean variable
+     ansible.builtin.debug:
+        msg: "the boolean variable is {{Isdevops}}"
+   - name: printing of list variable
+     ansible.builtin.debug:
+        msg: "the list variable is {{Skills}}"
+   - name: printing of map variable
+     ansible.builtin.debug:
+        msg: "the map variable is {{Experience}}"
+
+
+
+
+   
