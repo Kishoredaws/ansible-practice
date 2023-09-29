@@ -2,5 +2,5 @@
 roboshop-us-dev-db-mongodb-01.kishoremerugudevops.online
 
 [mongodb:vars]
-MONGO_USERNAME=mongodbadmin
-MONGO_DB=categories
+MONGO_USERNAME=mongodbuser
+MONGO_DB=payment
