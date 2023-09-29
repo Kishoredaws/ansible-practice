@@ -11,23 +11,23 @@
     - Kubernets
   - Experience: #map
     - Devops: 6
-    - AWS: 5
+    - AWS: 5 
     - Kubernetes: 4
-   tasks:
-   - name: printing of string variable
-     ansible.builtin.debug:
+    tasks:
+    - name: printing of string variable
+      ansible.builtin.debug:
         msg: "the string variable is {{Name}}"
-   - name: printing of number variable
-     ansible.builtin.debug:
+    - name: printing of number variable
+      ansible.builtin.debug:
         msg: "the number variable is {{Age}}"
-   - name: printing of boolean variable
-     ansible.builtin.debug:
+    - name: printing of boolean variable
+      ansible.builtin.debug:
         msg: "the boolean variable is {{Isdevops}}"
-   - name: printing of list variable
-     ansible.builtin.debug:
+    - name: printing of list variable
+      ansible.builtin.debug:
         msg: "the list variable is {{Skills}}"
-   - name: printing of map variable
-     ansible.builtin.debug:
+    - name: printing of map variable
+      ansible.builtin.debug:
         msg: "the map variable is {{Experience}}"
 
 
