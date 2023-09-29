@@ -1,6 +1,6 @@
 - name: printing of variable data types
   hosts: localhost
-  become; yes
+  become: yes
   vars:
   - Name: "Kishore"  # string 
   - Age: 39 #number
