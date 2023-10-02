@@ -1,0 +1,13 @@
+- name: install packages using loops concept
+  hosts: mongodb
+  become: yes
+  tasks:
+  - name: installing packages
+    ansible.builtin.yum:
+      name: {{item}}
+      state: installed
+    loop:
+    - nginx
+    - postmap
+    - git
+
